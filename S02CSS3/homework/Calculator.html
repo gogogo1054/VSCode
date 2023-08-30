@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator.html</title>
+        <style>
+            *
+            {
+                width: auto; height: auto;
+                font-size: 20px; color: white;
+                text-align: center;
+                border-radius: 20px 20px 20px 20px;
+            }
+            table
+            {
+                background-color: rgb(236, 236, 236);
+                border-spacing: 10px;
+            }
+            th
+            {
+                height: 100px;
+            }
+            .modify
+            {
+                background-color: greenyellow;
+                font-size: 40px; color: black; font-weight: bold;
+                height: 90px;
+                text-align: right;
+            }
+            .edit
+            {
+                background-color: rgb(131, 131, 131);
+                font-size: 30px; color: white;
+            }
+            .key
+            {
+                font-weight: bold;
+                font-size: 30px; color: white;
+                background-color: black;
+                width: 100px; height: 80px;
+            }
+            .cal:hover,.key:hover,th:hover
+            {
+                background-color: skyblue;
+            }
+            .cal
+            {
+                font-size: 40px; color: white;
+                background-color: orange;
+                width: 100px; height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="4" class ="modify">
+                    123+654&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="edit">
+                    BackSpace
+                </td>
+                <th colspan="2" class="edit">
+                    C
+                </td>
+            </tr>
+            <tr>
+                <td class="key">1</td>
+                <td class="key">2</td>
+                <td class="key">3</td>
+                <td class="cal">/</td>
+            </tr>
+            <tr>
+                <td class="key">4</td>
+                <td class="key">5</td>
+                <td class="key">6</td>
+                <td class="cal">X</td>
+            </tr>
+            <tr>
+                <td class="key">7</td>
+                <td class="key">8</td>
+                <td class="key">9</td>
+                <td class="cal">+</td>
+            </tr>
+            <tr>
+                <td class="key">=</td>
+                <td class="key">0</td>
+                <td class="key">.</td>
+                <td class="cal">-</td>
+            </tr>
+        </table>
+    </body>
+</html>

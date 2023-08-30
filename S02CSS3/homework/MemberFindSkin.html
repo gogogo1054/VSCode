@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>MemberFindSkin.html</title>
+    <style>
+        *
+        {
+            font-size: 14px; color: rgb(100, 100, 100); font-weight: bold;
+        }
+        form
+        {
+            margin-top: 40px;
+            margin-left: 90px;
+        }
+        input[type="text"]
+        {
+            border: 1px solid rgb(200, 200, 200);
+            height: 20px;
+            margin: 2px;
+        }
+        select
+        {
+            border: 1px solid rgb(200, 200, 200);
+        }
+        option
+        {
+            font-size: 13px; 
+            font-weight: normal;
+            color: black;
+        }
+        .outBox
+        {
+            margin-top: 10px;
+            width: 700px; height: 250px;
+            border-top: 5px solid rgb(160, 160, 160);    
+            border-left: 5px solid rgb(160, 160, 160);
+            border-right: 5px solid rgb(233, 233, 233);    
+            border-bottom: 5px solid rgb(233, 233, 233);    
+        }
+        .inBox
+        {
+            width: 690px; height: 240px;
+            border-right: 5px solid rgb(160, 160, 160);    
+            border-bottom: 5px solid rgb(160, 160, 160);
+            border-top: 5px solid rgb(233, 233, 233);    
+            border-left: 5px solid rgb(233, 233, 233);    
+        }
+    </style>
+    </head>
+    <body>
+        <input type="radio" name="find" id="find_id" checked>
+        아이디 찾기
+        <input type="radio" name="find" id="find_pw" style="margin-left: 30px;">
+        비밀번호 찾기
+        <div class="outBox">
+            <div class="inBox">
+                <form style="font-size: 14px;">
+                    <span style="font-weight:900; color: red;" >〉&nbsp;</span> 
+                    이름(대표자명)
+                    <input type="text" size="30" style="margin-left: 20px;">
+                    <br><br>
+                    <span style="font-weight:900; color: red;" >〉&nbsp;</span>
+                        <select name="pnumber" style="font-size: 13px; font-weight: normal;
+                        color: black; width: 90px; height: 25px;">
+                            <option value="pn">휴대전화</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="011">016</option>
+                            <option value="011">017</option>
+                            <option value="011">019</option>
+                        </select>
+                        <input type="text" size="1" maxlength="3"
+                        style="margin-left: 24px; width: 30px; height: 20px;">
+                        -
+                        <input type="text" size="2" maxlength="4"
+                        style="width: 40px; height: 20px;">
+                        -
+                        <input type="text" size="2" maxlength="4"
+                        style="width: 40px; height: 20px;">
+                </form>
+                <div style="text-align: center; letter-spacing: 3px; 
+                margin-top: 5px; font-size: 1px;">
+                    .........................................................................
+                </div>
+            <form style="text-align: center; margin-right: 90px; 
+            font-weight: normal; font-size: 13px;">
+            <br>
+                아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요.
+            </form>
+            </div>
+        </div>
+        <br>
+        <input type="radio" name="find2" id="find_id">
+        아이디 찾기
+        <input type="radio" name="find2" id="find_pw" style="margin-left: 30px;" checked>
+        비밀번호 찾기
+        <div class="outBox">
+            <div class="inBox">
+                <form style="font-size: 14px;">
+                    <span style="font-weight:900; color: red;" >〉&nbsp;</span> 
+                    아이디
+                    <input type="text" size="30" style="margin-left: 72px;">
+                    <br><br>
+                    <span style="font-weight:900; color: red;" >〉&nbsp;</span> 
+                    비밀번호
+                    <input type="text" size="30" style="margin-left: 58px;">
+                    <br><br>
+                    <span style="font-weight:900; color: red;" >〉&nbsp;</span>
+                        <select name="choice" style="font-size: 13px; font-weight: normal;
+                        color: black; width: 90px; height: 25px;">
+                            <option value="email">이메일</option>
+                            <option value="phone">휴대전화</option>
+                        </select>
+                        <input type="text" size="1" maxlength="3"
+                        style="margin-left: 24px; width: 100px; height: 20px;">
+                        @
+                        <input type="text" size="2" maxlength="4"
+                        style="width: 100px; height: 20px; ">
+                        <select name="mail" style="font-weight: normal;
+                        color: black;">
+                            <option value="default">직접입력</option>
+                            <option value="naver">naver.com</option>
+                            <option value="google">google.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="nate">nate.com</option>
+                        </select>
+                </form>
+                <div style="text-align: center; letter-spacing: 3px; 
+                margin-top: 5px; font-size: 1px;">
+                    .........................................................................
+                </div>
+            <form style="text-align: center; margin-right: 90px; margin-top: 20px; 
+            font-weight: normal; font-size: 13px;">
+                비밀번호를 찾기 위해서 아이디, 이름과 휴대번호 혹은 이메일을 입력하세요.
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
