@@ -40,7 +40,7 @@
                 background-color: black;
                 width: 20%; height: 15%;
             }
-            .cal:hover,.key:hover,th:hover
+            .edit:hover,.cal:hover,.key:hover,th:hover
             {
                 background-color: skyblue;
             }
@@ -51,40 +51,148 @@
                 width: 20%; height: 15%;
             }
         </style>
-
         <script>
-            function printNum()
+            function insertDelete()
             {
-                var n 
+                var v = document.getElementById("value").value;
+                v = v.substring(0,v.length-1);
+                document.getElementById("value").value = v;
+
+            }
+            function insertClean()
+            {
+                document.getElementById("value").value = "";
+            }
+            function insert1()
+            {
+                var n1 = document.getElementById("1").value;
+
+                document.getElementById("value").value += n1;
+            }
+            function insert2()
+            {
+                var n2 = document.getElementById("2").value;
+
+                document.getElementById("value").value += n2;
+            }
+            function insert3()
+            {
+                var n3 = document.getElementById("3").value;
+
+                document.getElementById("value").value += n3;
+            }
+            function insert4()
+            {
+                var n4 = document.getElementById("4").value;
+
+                document.getElementById("value").value += n4;
+            }
+            function insert5()
+            {
+                var n5 = document.getElementById("5").value;
+
+                document.getElementById("value").value += n5;
+            }
+            function insert6()
+            {
+                var n6 = document.getElementById("6").value;
+
+                document.getElementById("value").value += n6;
+            }
+            function insert7()
+            {
+                var n7 = document.getElementById("7").value;
+
+                document.getElementById("value").value += n7;
+            }
+            function insert8()
+            {
+                var n8 = document.getElementById("8").value;
+
+                document.getElementById("value").value += n8;
+            }
+            function insert9()
+            {
+                var n9 = document.getElementById("9").value;
+
+                document.getElementById("value").value += n9;
+            }
+            function insert0()
+            {
+                var n0 = document.getElementById("0").value;
+
+                document.getElementById("value").value += n0;
+            }
+            function insertDivide()
+            {
+                var div = document.getElementById("divide").value;
+
+                document.getElementById("value").value += div;
+            }
+            function insertMultiply()
+            {
+                var mul = document.getElementById("multiply").value;
+
+                document.getElementById("value").value += mul;
+            }
+            function insertPlus()
+            {
+                var plu = document.getElementById("plus").value;
+
+                document.getElementById("value").value += plu;
+            }
+            function insertMinus()
+            {
+                var min = document.getElementById("minus").value;
+
+                document.getElementById("value").value += min;
+            }
+            function insertDot()
+            {
+                var dot = document.getElementById("dot").value;
+
+                document.getElementById("value").value += dot;
+            }
+            function insertResult()
+            {
+                var res = document.getElementById("value").value;
+
+                res2 = eval(res);
+                
+                if(res2 == 0)
+                {
+                    res2 = "";
+                }
+                document.getElementById("value").value = res2;
             }
 
         </script>
     </head>
     <body>
         <div border="1">
-                <input class ="modify">
-                <button class="edit">BackSpace</button>
-                <button class="edit">C</button>
+                <input type="text" class ="modify" id="value" maxlength="2"><br>
+                <input type="button" class="edit" value="BackSpace" onclick="insertDelete()">
+                <input type="button" class="edit" value="C" onclick="insertClean()">
                 <br>
-                <button class="key">1</button>
-                <button class="key">2</button>
-                <button class="key">3</button>
-                <button class="cal">/</button>
+                <input type="button" class="key" id="1" value="1" onclick="insert1()">
+                <input type="button" class="key" id="2" value="2" onclick="insert2()">
+                <input type="button" class="key" id="3" value="3" onclick="insert3()">
+                <input type="button" class="cal" id="divide" value="/" onclick="insertDivide()">
                 <br>
-                <button class="key">4</button>
-                <button class="key">5</button>
-                <button class="key">6</button>
-                <button class="cal">X</button>
+                <input type="button" class="key" id="4" value="4" onclick="insert4()">
+                <input type="button" class="key" id="5" value="5" onclick="insert5()">
+                <input type="button" class="key" id="6" value="6" onclick="insert6()">
+                <input type="button" class="cal" id="multiply" value="*" onclick="insertMultiply()">
                 <br>
-                <button class="key">7</button>
-                <button class="key">8</button>
-                <button class="key">9</button>
-                <button class="cal">+</button>
+                <input type="button" class="key" id="7" value="7" onclick="insert7()">
+                <input type="button" class="key" id="8" value="8" onclick="insert8()">
+                <input type="button" class="key" id="9" value="9" onclick="insert9()">
+                <input type="button" class="cal" id="plus" value="+" onclick="insertPlus()">
                 <br>
-                <button class="key">7</button>
-                <button class="key">8</button>
-                <button class="key">9</button>
-                <button class="cal">-</button>
+                <input type="button" class="key" id="result" value="=" onclick="insertResult()">
+                <input type="button" class="key" id="0" value="0" onclick="insert0()">
+                <input type="button" class="key" id="dot" value="." onclick="insertDot()">
+                <input type="button" class="cal" id="minus" value="-" onclick="insertMinus()">
         </div>
     </body>
 </html>
